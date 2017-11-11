@@ -1,0 +1,74 @@
+.tag-wrapper {
+    display: flex;
+}
+
+.tag-cloud-fixed,
+.tag-cloud-generated {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.btn-big {
+    font-size: 24px;
+    border-radius: 60%;
+    padding: 9px 18px;
+}
+.btn-blue {
+    background-color: aliceblue;
+    border-color: lightblue;
+    color: #444;
+    
+    &:hover,
+    &:focus,
+    &.focus {
+        background-color: darken(aliceblue, 10%);
+        border-color: darken(lightblue, 10%);
+        outline: none;
+    }
+    &:active {
+        border-style: solid;
+    }
+}
+.btn-orange {
+    background-color: lighten(orange, 30%);
+    border-color: orange;
+    color: #444;
+    
+    &:hover,
+    &:focus,
+    &.focus {
+        background-color: lighten(orange, 10%);
+        border-color: darken(orange, 10%);
+        outline: none;
+    }
+    &:active {
+        border-style: solid;
+    }
+}
+
+.results-wrapper {
+    margin-top: 40px;
+}
+
+.results {
+    list-style: none;
+}
+
+.artist-name {
+    margin: 0 10px;
+}
+
+.categories {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#results-family,
+#results-sport {
+    display: none;
+    
+    &.show {
+        display: block;
+    }
+}

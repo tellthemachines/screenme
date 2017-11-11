@@ -1,0 +1,44 @@
+.site-header{
+    background-color: rgb(243,243,243);
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.text-input {
+    height: 32px;
+    width: 128px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.icon-button {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-shadow: none;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    transition: all .2s ease-in-out;
+}
+
+// search form styles
+
+.text-input.search-box {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.field-control.search {
+    left: 8px;
+    top: 8px;
+}
+.field-control.reset {
+    right: 8px;
+    top: 8px;
+}
