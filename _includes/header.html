@@ -3,7 +3,10 @@
   <div class="header-wrap">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}"><img src="img/auscouncil.png"/ /></a>
+    <a class="site-title" href="{{ site.github.url }}/">
+        <img src="img/auscouncil.png"/ />
+        <span>browse artworks</span>
+    </a>
     
     {% include search-form.html %}
   
