@@ -9,16 +9,14 @@
 </footer>
 
 <script>
-    function showFamily(){
-        document.getElementById("results-sport").classList.remove("show");
-        document.getElementById("btn-family").classList.remove("focus");
-        document.getElementById("results-family").classList.add("show");
-    }
     
-    function showSport(){
-        document.getElementById("results-family").classList.remove("show");
-        document.getElementById("btn-family").classList.add("focus");
-        document.getElementById("results-sport").classList.add("show");
+    function showResults(element, button) {
+        var buttons = document.getElementsByClassName("result")
+        for(var i = 0; i<buttons.length; i++) {
+            buttons[i].classList.remove("show");
+        }
+        document.getElementById(element).classList.add("show");
+        document.getElementById(button).classList.add("focus");
     }
 
 </script>

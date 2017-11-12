@@ -4,25 +4,36 @@ layout: default
 
 <div class="tag-wrapper">
 
+<header class="tag-header">
+    <h2 class="tag-heading">Browse Artworks</h2>
+    <div class="tag-tools">
+        <span>Categories:</span>
+        <span class="blue"></span>
+        <span>Current Trends:</span>
+        <span class="orange"></span>
+        <input type="button" value="clear" class="btn-clear" onclick="window.location.reload()">
+    </div>
+</header>
+
 <div class="tag-cloud">
-    <div><button id="btn-family" class="btn btn-big btn-blue" onclick="showFamily()">family</button></div>
+    <div><button id="btn-family" class="btn btn-big btn-blue" onclick="showResults('results-family','btn-family')">family</button></div>
     <div><button class="btn btn-big btn-blue">love</button></div>
-    <div><button id="btn-sport" class="btn btn-big btn-orange" onclick="showSport()">sport</button></div>
-    <div><button class="btn btn-big btn-orange">hope</button></div>
+    <div><button id="btn-sport" class="btn btn-big btn-orange" onclick="showResults('results-sport','btn-sport')">sport</button></div>
+    <div><button class="btn btn-big btn-orange">refugees</button></div>
     <div><button class="btn btn-big btn-orange">war</button></div>
-    <div><button class="btn btn-big btn-orange">workers</button></div>
-    <div><button class="btn btn-big btn-blue">underdog</button></div>
+    <div><button class="btn btn-big btn-orange">trade</button></div>
+    <div><button class="btn btn-big btn-blue">community</button></div>
     <div><button class="btn btn-big btn-orange">urban</button></div>
     <div><button class="btn btn-big btn-blue">power</button></div>
     <div><button class="btn btn-big btn-blue">journey</button></div>
     <div><button class="btn btn-big btn-blue">ritual</button></div>
 </div>
- 
+
 </div>
 
-<div class="results-wrapper">    
+<div class="results-wrapper">
 
-    <div id="results-family">
+    <div class="result" id="results-family">
         <ul class="results">
             <li>
                 <a href="{{ site.github.url }}/hobson-grant.html">Koonibba Roosters Football Club<strong class="artist-name">Hobson Grant</strong> New Media</a>
@@ -32,13 +43,13 @@ layout: default
             </li>
         </ul>
     </div>
-    
-    <div id="results-sport">
+
+    <div class="result" id="results-sport">
         <ul class="results">
             <li>
                 <a href="hobson-grant.html">Koonibba Roosters Football Club<strong class="artist-name">Hobson Grant</strong> New Media</a>
             </li>
         </ul>
     </div>
-    
+
 </div>

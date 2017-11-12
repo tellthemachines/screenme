@@ -9,8 +9,12 @@
 }
 
 .site-title {
-    &:hover span {
+    font-family: Montserrat, sans-serif;
+    &:hover {
         text-decoration: none;
+    }    
+    span {
+        margin-left: 10px;
     }
 }
 
@@ -47,4 +51,16 @@
 .field-control.reset {
     right: 8px;
     top: 8px;
+}
+
+@media (max-width: 670px) {
+    .header-wrap {
+        flex-wrap: wrap;
+    }
+    .site-title {
+        margin: auto;
+    }
+    .search-form {
+        margin: 20px auto;
+    }
 }
