@@ -66,7 +66,7 @@
 }
 .btn-blue {
     background-color: aliceblue;
-    border-color: lightblue;
+    border: 1px solid lightblue;
     color: #1756a9;
 
     &:hover,
@@ -82,7 +82,7 @@
 }
 .btn-orange {
     background-color: lighten(orange, 30%);
-    border-color: orange;
+    border: 1px solid orange;
     color: darken(orange, 30%);
 
     &:hover,
