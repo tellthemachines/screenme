@@ -12,7 +12,7 @@
     font-family: Montserrat, sans-serif;
     &:hover {
         text-decoration: none;
-    }    
+    }
     span {
         margin-left: 10px;
     }
@@ -51,6 +51,10 @@
 .field-control.reset {
     right: 8px;
     top: 8px;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat, sans-serif;
 }
 
 @media (max-width: 670px) {

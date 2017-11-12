@@ -16,15 +16,15 @@ layout: default
 </header>
 
 <div class="tag-cloud">
+    <div><button id="btn-refugees" class="btn btn-big btn-orange" onclick="showResults('results-refugees','btn-refugees')">refugees</button></div>
+    <div><button class="btn btn-big btn-orange">war</button></div>
+    <div><button id="btn-community" class="btn btn-big btn-blue" onclick="showResults('results-community','btn-community')">community</button></div>
+    <div><button class="btn btn-big btn-blue">power</button></div>
     <div><button id="btn-family" class="btn btn-big btn-blue" onclick="showResults('results-family','btn-family')">family</button></div>
     <div><button class="btn btn-big btn-blue">love</button></div>
-    <div><button id="btn-sport" class="btn btn-big btn-orange" onclick="showResults('results-sport','btn-sport')">sport</button></div>
-    <div><button class="btn btn-big btn-orange">refugees</button></div>
-    <div><button class="btn btn-big btn-orange">war</button></div>
-    <div><button class="btn btn-big btn-orange">trade</button></div>
-    <div><button class="btn btn-big btn-blue">community</button></div>
     <div><button class="btn btn-big btn-orange">urban</button></div>
-    <div><button class="btn btn-big btn-blue">power</button></div>
+    <div><button id="btn-sport" class="btn btn-big btn-orange" onclick="showResults('results-sport','btn-sport')">sport</button></div>
+    <div><button class="btn btn-big btn-orange">trade</button></div>
     <div><button class="btn btn-big btn-blue">journey</button></div>
     <div><button class="btn btn-big btn-blue">ritual</button></div>
 </div>
@@ -47,7 +47,44 @@ layout: default
     <div class="result" id="results-sport">
         <ul class="results">
             <li>
-                <a href="hobson-grant.html">Koonibba Roosters Football Club<strong class="artist-name">Hobson Grant</strong> New Media</a>
+                <a href="{{ site.github.url }}/hobson-grant.html">Koonibba Roosters Football Club<strong class="artist-name">Hobson Grant</strong> New Media</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="result" id="results-community">
+        <ul class="results">
+            <li>
+                <a href="">Ngaanyatjarra Lands Art Centre exhibition catalogue <strong class="artist-name">Tjarlirli Art</strong> Visual Arts</a>
+            </li>
+            <li>
+                <a href="{{ site.github.url }}/lee-youbi">Asylum Silk Roads <strong class="artist-name">Lee Youbi</strong> Visual Arts</a>
+            </li>
+            <li>
+                <a href="">Yabun Festival 2017 <strong class="artist-name">Gadigal Information Service</strong> Community Arts & Cultural Development</a>
+            </li>
+            <li>
+                <a href="">Wanderings <strong class="artist-name">Pajalic Fikret</strong> Fiction</a>
+            </li>
+            <li>
+                <a href="{{ site.github.url }}/hobson-grant.html">Koonibba Roosters Football Club<strong class="artist-name">Hobson Grant</strong> New Media</a>
+            </li>
+            <li>
+                <a href="">Clay Stories from Remote Communities<strong class="artist-name">Remote Communities Ceramic Network</strong> Community Arts & Cultural Development</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="result" id="results-refugees">
+        <ul class="results">
+            <li>
+                <a href="{{ site.github.url }}/lee-youbi">Asylum Silk Roads <strong class="artist-name">Lee Youbi</strong> Visual Arts</a>
+            </li>
+            <li>
+                <a href="">Wanderings <strong class="artist-name">Pajalic Fikret</strong> Fiction</a>
+            </li>
+            <li>
+                <a href="">Between Us: a young adult novel <strong class="artist-name">Atkins Clare</strong> Fiction</a>
             </li>
         </ul>
     </div>
